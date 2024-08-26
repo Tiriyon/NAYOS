@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key/Value Store</title>
+</head>
+<body>
+    <h1>Key/Value Store</h1>
+    <form method="post">
+        <input type="text" name="key" placeholder="Key" required>
+        <input type="text" name="value" placeholder="Value" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Current Entries:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in entries %}
+            <tr>
+                <td>{{ entry[0] }}</td>
+                <td>{{ entry[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+

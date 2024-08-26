@@ -1,0 +1,10 @@
+flask
+requests
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation
+opentelemetry-instrumentation-psycopg2
+opentelemetry-instrumentation-requests==0.47b0
+opentelemetry-instrumentation-flask
+opentelemetry-exporter-jaeger
+psycopg2-binary
